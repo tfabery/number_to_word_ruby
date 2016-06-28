@@ -11,6 +11,8 @@ class Fixnum
       word = num_hash_tens[self]
     elsif self < 100
       word = num_hash_tens[self./(10)] + ' ' + num_hash_ones[self.%(10)]
+    elsif self < 1000
+      word = num_hash_ones[self./(100)] + ' hundred and ' +  num_hash_tens[self.%(100)./(10)] + ' ' + num_hash_ones[self.%(10)]  
     end
     word
   end
