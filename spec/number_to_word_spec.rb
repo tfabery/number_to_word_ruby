@@ -9,12 +9,12 @@ describe('Fixnum#num_to_word') do
     expect(18.num_to_word()).to(eq('eighteen'))
   end
   it("returns a word for a number less than one hundred") do
-    expect(054.num_to_word()).to(eq('fifty four'))
+    expect(54.num_to_word()).to(eq('fifty four'))
   end
   it("returns a word for a number less than one thousand") do
-    expect(678.num_to_word()).to(eq('six hundred and seventy eight'))
+    expect(678.num_to_word()).to(eq('six hundred seventy eight'))
   end
-  it("returns a word for a number less than one million") do
-    expect(83746.num_to_word()).to(eq('eighty three thousand, seven hundred and forty six'))
+  it("returns a word for a number less than ten thousand") do
+    expect(3746.num_to_word()).to(eq('three thousand seven hundred forty six'))
   end
 end
