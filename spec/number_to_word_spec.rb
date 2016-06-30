@@ -12,7 +12,7 @@ describe('Fixnum#num_to_word') do
     expect(18.num_to_word()).to(eq('eighteen'))
   end
   it("returns a word for a number less than one hundred") do
-    expect(54.num_to_word()).to(eq('fifty four'))
+    expect(24.num_to_word()).to(eq('twenty four'))
   end
   it("returns a word for a number less than one thousand") do
     expect(678.num_to_word()).to(eq('six hundred seventy eight'))

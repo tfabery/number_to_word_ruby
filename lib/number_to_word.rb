@@ -32,6 +32,7 @@ class Fixnum
       word.push(places[idx])
       result.push(word.join(' '))
     end
+    num_array = []
     result_string = result.reverse.join(' ').rstrip
   end
 end

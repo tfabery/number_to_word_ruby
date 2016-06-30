@@ -11,7 +11,7 @@ class String
     result = 0
     word_array.each_index do |idx|
       if num_hash_ones.invert.include? word_array[idx] && word_array[idx + 1]
-        binding.pry
+        # binding.pry
         result += num_hash_ones.key(word_array[idx])
         result_array.push(result)
         result *= 0
